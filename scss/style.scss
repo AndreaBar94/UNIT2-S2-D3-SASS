@@ -30,6 +30,7 @@ header{
     }   
 }
 .hero{
+    @include fadeIn(1s, 0.1s, fadeIn);
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -45,7 +46,6 @@ header{
     }
     p{
         @include title-big;
-        @include fadeIn(1s, 0.1s, fadeIn);
     }
 }
 .container{
