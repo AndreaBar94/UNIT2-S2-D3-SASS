@@ -30,18 +30,24 @@ header{
     }   
 }
 .hero{
-    
-    img{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bg-hero;
+    color: $text-color;
+    padding-block: 1rem;
+    margin-block: 1rem;
+    div{
+        align-items: center;
+        img{
         @include floating
+    }
     }
     p{
         @include title-big;
-        @include fadeIn(1s, forward, 0.1s, fadeIn)
+        @include fadeIn(1s, forward, 0.1s, fadeIn);
+        
     }
-
-    background-color: $bg-hero;
-    color: $text-color;
-    
 }
 .container{
     img{
