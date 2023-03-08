@@ -36,7 +36,7 @@ header{
     background-color: $bg-hero;
     color: $text-color;
     padding-block: 1rem;
-    margin-block: 1rem;
+    margin-bottom: 2rem;
     div{
         align-items: center;
         img{
@@ -45,8 +45,7 @@ header{
     }
     p{
         @include title-big;
-        @include fadeIn(1s, forward, 0.1s, fadeIn);
-        
+        @include fadeIn(1s, 0.1s, fadeIn);
     }
 }
 .container{

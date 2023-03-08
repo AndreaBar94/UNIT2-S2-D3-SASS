@@ -1,9 +1,9 @@
-@mixin fadeIn ($duration, $start-end, $delay, $name){
+@mixin fadeIn ($duration, $delay, $name){
     .fade-in {
         translate: translateY(2px);
         animation-name: $name;
         animation-iteration-count: 1;
-        animation-fill-mode: $start-end;
+        animation-fill-mode: both;
         animation-delay: $delay;
         animation-timing-function: ease-in;
         animation-duration: $duration;
