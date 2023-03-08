@@ -1,0 +1,19 @@
+@mixin fadeIn ($duration, $start-end, $delay, $name){
+    .fade-in {
+        animation-name: $name;
+        animation-iteration-count: 1;
+        animation-fill-mode: $start-end;
+        animation-delay: $delay;
+        animation-timing-function: ease-in;
+        animation-duration: $duration;
+    }
+    @keyframes #{$name}{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+}
